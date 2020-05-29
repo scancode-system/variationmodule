@@ -1,0 +1,30 @@
+{
+    "name": "scancode-system/variation-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Variation\\Providers\\VariationServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Variation\\": ""
+        }
+    },
+    "type": "laravel-module",
+    "require": {
+        "scancode-system/product-module":"^1.0"
+    }
+
+}
