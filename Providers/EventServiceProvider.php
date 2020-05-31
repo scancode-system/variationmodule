@@ -13,6 +13,7 @@ use Modules\Order\Events\UpdateManyItemsBeginEvent;
 use Modules\Variation\Listeners\CheckItemsValidationMinListener;
 
 use Modules\Product\Events\ProductLazyEagerLoadingEvent;
+use Modules\Variation\Listeners\EagerLoadingProductVariationListener;
 
 class EventServiceProvider extends ServiceProvider 
 {
@@ -28,6 +29,7 @@ class EventServiceProvider extends ServiceProvider
 		Event::listen(UpdateManyItemsBeginEvent::class, CheckItemsValidationMinListener::class);
 
 		Event::listen(ProductLazyEagerLoadingEvent::class, ProductsLazyEagerLoadingListener::class);
+		Event::listen(ProductLazyEagerLoadingEvent::class, EagerLoadingProductVariationListener::class);
 	}
 
 }

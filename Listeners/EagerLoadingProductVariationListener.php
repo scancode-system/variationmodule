@@ -5,7 +5,7 @@ namespace Modules\Variation\Listeners;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ProductsLazyEagerLoadingListener
+class EagerLoadingProductVariationListener
 {
     /**
      * Create the event listener.
