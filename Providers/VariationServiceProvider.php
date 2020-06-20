@@ -35,11 +35,8 @@ class VariationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(EventServiceProvider::class);
-        $this->app->register(RouteServiceProvider::class);
         $this->app->register(ObserverServiceProvider::class);
-        $this->app->register(RelationshipServiceProvider::class);
-        $this->app->register(ViewComposerServiceProvider::class);
-    
+        $this->app->register(RelationshipServiceProvider::class);    
     }
 
 
